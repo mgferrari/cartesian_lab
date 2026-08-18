@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Laboratorio interattivo di matematica: esplora il ruolo dei parametri nel piano cartesiano.">
+  <title>Laboratorio di matematica</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Laboratorio di matematica - home">
+        <span class="brand-mark">∑</span>
+        <span>Laboratorio di matematica</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero shell">
+      <p class="eyebrow">MATEMATICA NEL PIANO CARTESIANO</p>
+      <h1>Muovi i parametri.<br>Guarda che cosa cambia.</h1>
+      <p class="hero-copy">Scegli un oggetto, modifica i parametri con gli slider e osserva subito il significato geometrico delle formule.</p>
+    </section>
+
+    <section class="shell section-block" aria-labelledby="available-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PRIMA VERSIONE</p>
+          <h2 id="available-title">Esplora</h2>
+        </div>
+        <p class="section-note">Tre casi base per costruire il motore del laboratorio.</p>
+      </div>
+
+      <div class="topic-grid">
+        <a class="topic-card" href="lab.html?type=linea">
+          <span class="topic-icon">／</span>
+          <span class="topic-number">01</span>
+          <h3>Retta</h3>
+          <p class="topic-formula">y = mx + q</p>
+          <p>Scopri come <strong>m</strong> cambia la pendenza e <strong>q</strong> sposta la retta.</p>
+          <span class="topic-action">Apri il laboratorio →</span>
+        </a>
+
+        <a class="topic-card" href="lab.html?type=parabola">
+          <span class="topic-icon">∪</span>
+          <span class="topic-number">02</span>
+          <h3>Parabola</h3>
+          <p class="topic-formula">y = a(x − h)² + k</p>
+          <p>Osserva apertura, verso e posizione del vertice.</p>
+          <span class="topic-action">Apri il laboratorio →</span>
+        </a>
+
+        <a class="topic-card" href="lab.html?type=circonferenza">
+          <span class="topic-icon">○</span>
+          <span class="topic-number">03</span>
+          <h3>Circonferenza</h3>
+          <p class="topic-formula">(x − h)² + (y − k)² = r²</p>
+          <p>Sposta il centro e modifica il raggio direttamente sul piano.</p>
+          <span class="topic-action">Apri il laboratorio →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="shell section-block future-block" aria-labelledby="future-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PROSSIMAMENTE</p>
+          <h2 id="future-title">Il laboratorio crescerà</h2>
+        </div>
+      </div>
+      <div class="future-list" aria-label="Argomenti futuri">
+        <span>Radice n-esima</span><span>Ellisse</span><span>Iperbole</span><span>Frazione algebrica</span><span>Valore assoluto</span><span>Esponenziale</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">Laboratorio interattivo • matematica e geometria nel piano cartesiano</div>
+  </footer>
+</body>
+</html>

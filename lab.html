@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Laboratorio interattivo per esplorare il ruolo dei parametri nel piano cartesiano.">
+  <title>Laboratorio | Matematica</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Torna alla home">
+        <span class="brand-mark">∑</span>
+        <span>Laboratorio di matematica</span>
+      </a>
+      <a class="back-link" href="index.html">← Tutti gli argomenti</a>
+    </div>
+  </header>
+
+  <main class="shell lab-page">
+    <section class="lab-intro">
+      <p class="eyebrow" id="topic-kicker">LABORATORIO</p>
+      <h1 id="topic-title">Retta</h1>
+      <p class="lab-lead" id="topic-description"></p>
+      <div class="formula-box" aria-live="polite">
+        <span class="formula-label">Formula</span>
+        <span id="dynamic-formula" class="formula-main"></span>
+      </div>
+    </section>
+
+    <div class="mode-switch" role="tablist" aria-label="Modalità del laboratorio">
+      <button class="mode-button active" type="button" data-mode="explore" role="tab" aria-selected="true">Esplora</button>
+      <button class="mode-button" type="button" data-mode="challenge" role="tab" aria-selected="false">Sfida</button>
+    </div>
+
+    <section class="lab-grid">
+      <aside class="control-panel" aria-labelledby="controls-title">
+        <div id="explore-panel">
+          <div class="panel-heading">
+            <p class="eyebrow">PARAMETRI</p>
+            <h2 id="controls-title">Muovi gli slider</h2>
+          </div>
+          <div id="slider-container" class="slider-stack"></div>
+          <button id="reset-button" class="button-secondary" type="button">Ripristina valori</button>
+
+          <div class="observation-box">
+            <p class="eyebrow">OSSERVA</p>
+            <div id="observation-text"></div>
+          </div>
+        </div>
+
+        <div id="challenge-panel" hidden>
+          <div class="panel-heading">
+            <p class="eyebrow">SFIDA</p>
+            <h2>Trova i parametri</h2>
+          </div>
+          <p class="challenge-copy">La curva tratteggiata è il bersaglio. Muovi gli slider finché la tua curva coincide con quella bersaglio.</p>
+          <div id="challenge-slider-container" class="slider-stack"></div>
+          <div class="button-row">
+            <button id="check-button" class="button-primary" type="button">Controlla</button>
+            <button id="new-challenge-button" class="button-secondary" type="button">Nuova sfida</button>
+          </div>
+          <div id="challenge-feedback" class="feedback" aria-live="polite"></div>
+        </div>
+      </aside>
+
+      <section class="graph-section" aria-label="Piano cartesiano interattivo">
+        <div class="graph-toolbar">
+          <label class="check-row">
+            <input id="show-points" type="checkbox" checked>
+            <span>Mostra punti notevoli</span>
+          </label>
+          <label class="check-row">
+            <input id="show-grid" type="checkbox" checked>
+            <span>Mostra griglia</span>
+          </label>
+        </div>
+        <div class="graph-wrap">
+          <svg id="graph" viewBox="0 0 840 560" role="img" aria-label="Grafico nel piano cartesiano"></svg>
+        </div>
+        <p class="graph-caption" id="graph-caption"></p>
+      </section>
+    </section>
+
+    <section class="theory-strip" aria-labelledby="theory-title">
+      <div>
+        <p class="eyebrow">TEORIA IN BREVE</p>
+        <h2 id="theory-title">Che cosa significano i parametri?</h2>
+      </div>
+      <div id="theory-content" class="theory-content"></div>
+    </section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
