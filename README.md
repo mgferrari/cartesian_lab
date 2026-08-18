@@ -1,53 +1,42 @@
-# Laboratorio di matematica
+# Cartesian Plane Laboratory
 
-Piccolo sito statico per esplorare graficamente il ruolo dei parametri nel piano cartesiano.
+A static interactive mathematics website for exploring how parameters affect graphs in the Cartesian plane.
 
-## Prima versione
+## Current topics
 
-- Retta: `y = mx + q`
+- Straight line: `y = mx + q`
 - Parabola: `y = a(x - h)^2 + k`
-- Circonferenza: `(x - h)^2 + (y - k)^2 = r^2`
-- Modalità **Esplora** con slider e osservazioni dinamiche
-- Modalità **Sfida**: sovrapporre la propria curva a una curva bersaglio trovando i parametri corretti
-- Grafico SVG costruito in JavaScript puro
-- Nessuna dipendenza esterna
-- Layout responsive, adatto anche a smartphone
+- Circle: `(x - h)^2 + (y - k)^2 = r^2`
 
-## Avvio locale
+Each topic includes an **Explore** mode and a **Challenge** mode.
 
-Il sito usa moduli JavaScript ES, quindi è meglio aprirlo tramite un piccolo server locale.
+## Design principles
 
-Con Python:
+1. Mathematical correctness: one unit on the x-axis has exactly the same visual length as one unit on the y-axis, so grid cells are square and circles remain circular.
+2. LaTeX-inspired visual identity: Computer Modern typography, restrained page layout and display-style equations.
+3. Simple mathematical English: short, repeated sentence patterns to support both mathematics and language learning.
+
+## Structure
+
+```text
+index.html
+lab.html
+css/
+  style.css
+js/
+  app.js
+  functions.js
+  graph.js
+```
+
+The graph engine is written in plain JavaScript and SVG. No JavaScript framework is required.
+
+## Local preview
+
+From the repository folder:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Poi aprire:
-
-```text
-http://localhost:8000
-```
-
-## Pubblicazione con GitHub Pages
-
-1. Caricare tutti i file in un repository GitHub.
-2. Aprire **Settings → Pages**.
-3. Scegliere **Deploy from a branch**.
-4. Selezionare il branch `main` e la cartella `/ (root)`.
-
-## Struttura
-
-```text
-laboratorio-matematica/
-├── index.html
-├── lab.html
-├── css/
-│   └── style.css
-└── js/
-    ├── app.js
-    ├── functions.js
-    └── graph.js
-```
-
-La logica delle singole figure è concentrata soprattutto in `js/functions.js`, così sarà facile aggiungere altri argomenti senza duplicare il sito.
+Then open `http://localhost:8000`.

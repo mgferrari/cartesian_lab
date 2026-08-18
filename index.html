@@ -1,64 +1,62 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Laboratorio interattivo di matematica: esplora il ruolo dei parametri nel piano cartesiano.">
-  <title>Laboratorio di matematica</title>
+  <meta name="description" content="An interactive mathematics laboratory for exploring parameters and graphs in the Cartesian plane.">
+  <title>Cartesian Plane Laboratory</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@333f55ec19733c28cdc43567ecf72eafd6b0af61/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="brand" href="index.html" aria-label="Laboratorio di matematica - home">
+      <a class="brand" href="index.html" aria-label="Cartesian Plane Laboratory — home">
         <span class="brand-mark">∑</span>
-        <span>Laboratorio di matematica</span>
+        <span>Cartesian Plane Laboratory</span>
       </a>
     </div>
   </header>
 
   <main>
     <section class="hero shell">
-      <p class="eyebrow">MATEMATICA NEL PIANO CARTESIANO</p>
-      <h1>Muovi i parametri.<br>Guarda che cosa cambia.</h1>
-      <p class="hero-copy">Scegli un oggetto, modifica i parametri con gli slider e osserva subito il significato geometrico delle formule.</p>
+      <p class="eyebrow">MATHEMATICS · CARTESIAN PLANE</p>
+      <h1>Explore a formula<br>through its graph.</h1>
+      <p class="hero-copy">Choose an object, change its parameters and observe how the graph changes. The aim is to connect algebraic notation with its geometric meaning.</p>
     </section>
 
     <section class="shell section-block" aria-labelledby="available-title">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">PRIMA VERSIONE</p>
-          <h2 id="available-title">Esplora</h2>
+          <p class="eyebrow">INTERACTIVE LABORATORY</p>
+          <h2 id="available-title">Available topics</h2>
         </div>
-        <p class="section-note">Tre casi base per costruire il motore del laboratorio.</p>
+        <p class="section-note">Start with three basic objects in the Cartesian plane.</p>
       </div>
 
       <div class="topic-grid">
-        <a class="topic-card" href="lab.html?type=linea">
-          <span class="topic-icon">／</span>
-          <span class="topic-number">01</span>
-          <h3>Retta</h3>
-          <p class="topic-formula">y = mx + q</p>
-          <p>Scopri come <strong>m</strong> cambia la pendenza e <strong>q</strong> sposta la retta.</p>
-          <span class="topic-action">Apri il laboratorio →</span>
+        <a class="topic-card" href="lab.html?type=line">
+          <span class="topic-number">1</span>
+          <h3>Straight line</h3>
+          <p class="topic-formula"><em>y</em> = <em>mx</em> + <em>q</em></p>
+          <p>Explore how <em>m</em> changes the slope and how <em>q</em> changes the vertical intercept.</p>
+          <span class="topic-action">Open laboratory →</span>
         </a>
 
         <a class="topic-card" href="lab.html?type=parabola">
-          <span class="topic-icon">∪</span>
-          <span class="topic-number">02</span>
+          <span class="topic-number">2</span>
           <h3>Parabola</h3>
-          <p class="topic-formula">y = a(x − h)² + k</p>
-          <p>Osserva apertura, verso e posizione del vertice.</p>
-          <span class="topic-action">Apri il laboratorio →</span>
+          <p class="topic-formula"><em>y</em> = <em>a</em>(<em>x</em> − <em>h</em>)² + <em>k</em></p>
+          <p>Observe the direction, width and position of the vertex.</p>
+          <span class="topic-action">Open laboratory →</span>
         </a>
 
-        <a class="topic-card" href="lab.html?type=circonferenza">
-          <span class="topic-icon">○</span>
-          <span class="topic-number">03</span>
-          <h3>Circonferenza</h3>
-          <p class="topic-formula">(x − h)² + (y − k)² = r²</p>
-          <p>Sposta il centro e modifica il raggio direttamente sul piano.</p>
-          <span class="topic-action">Apri il laboratorio →</span>
+        <a class="topic-card" href="lab.html?type=circle">
+          <span class="topic-number">3</span>
+          <h3>Circle</h3>
+          <p class="topic-formula">(<em>x</em> − <em>h</em>)² + (<em>y</em> − <em>k</em>)² = <em>r</em>²</p>
+          <p>Move the centre and change the radius directly on the Cartesian plane.</p>
+          <span class="topic-action">Open laboratory →</span>
         </a>
       </div>
     </section>
@@ -66,18 +64,18 @@
     <section class="shell section-block future-block" aria-labelledby="future-title">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">PROSSIMAMENTE</p>
-          <h2 id="future-title">Il laboratorio crescerà</h2>
+          <p class="eyebrow">NEXT TOPICS</p>
+          <h2 id="future-title">The laboratory will grow</h2>
         </div>
       </div>
-      <div class="future-list" aria-label="Argomenti futuri">
-        <span>Radice n-esima</span><span>Ellisse</span><span>Iperbole</span><span>Frazione algebrica</span><span>Valore assoluto</span><span>Esponenziale</span>
+      <div class="future-list" aria-label="Future topics">
+        <span>n-th root</span><span>Ellipse</span><span>Hyperbola</span><span>Rational function</span><span>Absolute value</span><span>Exponential function</span>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="shell">Laboratorio interattivo • matematica e geometria nel piano cartesiano</div>
+    <div class="shell">Interactive mathematics · algebra and geometry in the Cartesian plane</div>
   </footer>
 </body>
 </html>
