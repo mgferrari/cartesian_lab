@@ -1,39 +1,39 @@
 # Cartesian Plane Laboratory
 
-A static interactive mathematics website for exploring how parameters affect graphs in the Cartesian plane.
+A small interactive mathematics laboratory designed to complement classroom theory sheets.
 
-## Current topics
+The project uses plain HTML, CSS and JavaScript and can be published directly with GitHub Pages.
+
+## Available topics
 
 - Straight line: `y = mx + q`
 - Parabola: `y = a(x - h)^2 + k`
 - Circle: `(x - h)^2 + (y - k)^2 = r^2`
+- n-th root function: `y = a root_n(x - h) + k`
+- Absolute value: `y = a|x - h| + k`
+- Exponential function: `y = a^x`
+- Ellipse: `(x - h)^2/a^2 + (y - k)^2/b^2 = 1`
 
-Each topic includes an **Explore** mode and a **Challenge** mode.
+Each topic includes:
+
+- a short explanation in simple mathematical English;
+- sliders for the parameters;
+- a Cartesian plane with a true 1:1 geometric scale;
+- optional coloured parameter guides;
+- key points;
+- an Explore mode;
+- a Challenge mode in which students reconstruct a target graph.
 
 ## Design principles
 
-1. Mathematical correctness: one unit on the x-axis has exactly the same visual length as one unit on the y-axis, so grid cells are square and circles remain circular.
-2. LaTeX-inspired visual identity: Computer Modern typography, restrained page layout and display-style equations.
-3. Simple mathematical English: short, repeated sentence patterns to support both mathematics and language learning.
+1. Mathematical correctness: one unit on the x-axis has exactly the same graphical length as one unit on the y-axis.
+2. LaTeX-like visual identity: Computer Modern typography, restrained layout and minimal decoration.
+3. Simple mathematical English: short recurring sentence patterns and precise vocabulary.
+4. Parameter visibility: coloured geometric guides connect each slider to the feature it controls.
 
-## Structure
+## Run locally
 
-```text
-index.html
-lab.html
-css/
-  style.css
-js/
-  app.js
-  functions.js
-  graph.js
-```
-
-The graph engine is written in plain JavaScript and SVG. No JavaScript framework is required.
-
-## Local preview
-
-From the repository folder:
+From the project directory:
 
 ```bash
 python3 -m http.server 8000
